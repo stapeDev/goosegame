@@ -73,6 +73,12 @@ public class GooseLogics {
         }
     }
 
+    /**
+     * This method launch the dices and sets two random values
+     * 
+     * @param player
+     * @return the dices result
+     */
     public Dice lauchDice(Player player) {
         if (isAPlayerWonTheGame()) {
             throw new RuntimeException("Mossa non consentita, un giocatore ha già vinto");
@@ -82,6 +88,12 @@ public class GooseLogics {
         return currentRoll;
     }
 
+    /**
+     * This method launch the dices and sets the two values provided by the input
+     * 
+     * @param player
+     * @return the dices result
+     */
     public Dice lauchDice(Player player, Integer first, Integer second) {
         if (isAPlayerWonTheGame()) {
             throw new RuntimeException("Mossa non consentita, un giocatore ha già vinto");
